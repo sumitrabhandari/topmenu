@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>topmenu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <img src="https://softbenz.com/uploads/settings/site-logo-1627373849.svg" alt="" class="logo">
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="">Home
+                        <div class="line"></div>
+                    </a></li>
+                    <li><a href="">About Us
+                        <div class="line"></div>
+                    </a></li>
+                    <li><a href="">Services
+                        <div class="line"></div>
+                    </a></li>
+                    <li><a href="">portfolio
+                        <div class="line"></div>
+                    </a></li>
+                    <li><a href="">Pricing
+                        <div class="line"></div>
+                    </a></li>
+                    <li><a href="">Careers
+                        <div class="line"></div>
+                </a></li>
+                    <li><a href>Contacts
+                        <div class="line"></div>
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+        <div><button class="Quick-Enquiry">Quick-Enquiry</button></div>
+        <div class="open-icon" onclick="openMenu()"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        <div class="close-icon" onclick="closeMenu()"><i class="fa fa-times " aria-hidden="true"></i></div>
+    </div>
+</body>
+    <script>
+        function openMenu(){
+            document.getElementsByClassName('menu')[0].style.display="block"
+        }
+        function closeMenu(){
+            document.getElementsByClassName('menu')[0].style.display="none"
+        }
+    </script>
+</html>
